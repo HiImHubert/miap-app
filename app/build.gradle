@@ -29,13 +29,19 @@ android {
 }
 
 dependencies {
-
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.preference:preference:1.1.0'
     implementation 'org.osmdroid:osmdroid-android:6.0.2'
+    implementation 'com.google.android.gms:play-services-awareness:16.0.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    compile 'com.github.MKergall:osmbonuspack:6.6.0'
+    compile(name:'osmbonuspack_v6.6.0', ext:'aar')
+    compile 'org.osmdroid:osmdroid-android:6.0.2'
+    compile 'org.apache.commons:commons-lang3:3.3.4'
+    compile 'com.google.code.gson:gson:2.8.5'
+    compile 'com.squareup.okhttp3:okhttp:3.10.0'
 }
